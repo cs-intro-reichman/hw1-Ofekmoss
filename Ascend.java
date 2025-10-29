@@ -2,9 +2,7 @@
 // and prints them in increasing order.
 public class Ascend {
 	public static void main(String[] args) {
-		java.io.Console console = System.console();
-
-		Integer range = Integer.parseInt(console.readLine("Enter a number: "));
+		Integer range = Integer.parseInt(args[0]);
 		Integer a = (int) (Math.random() * range);
 		Integer b = (int) (Math.random() * range);
 		Integer c = (int) (Math.random() * range);
