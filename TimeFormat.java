@@ -6,7 +6,7 @@ public class TimeFormat {
 		
 		Boolean isPM = hours >= 12;
 		Boolean isMinutesLessThen10 = minutes < 10;
-		System.out.println(String.format("%s:%s %s", isPM ? hours - 12  : hours, isMinutesLessThen10 ? "0" + minutes : minutes, isPM ? "PM" : "AM"));
-		
+		System.out.println(String.format("%s:%s %s", isPM && hours != 12 ? hours - 12  : hours, isMinutesLessThen10 ? "0" + minutes : minutes, isPM ? "PM" : "AM"));
+
 	}
 }
